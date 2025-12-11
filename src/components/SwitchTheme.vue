@@ -1,16 +1,3 @@
-<script setup lang="ts">
-const emit = defineEmits<{
-  (e: 'toggle-theme'): void
-}>()
-</script>
-
-<template>
-  <label class="switch" @change="emit('toggle-theme')">
-    <input type="checkbox" />
-    <span class="slider"></span>
-  </label>
-</template>
-
 <style scoped>
 .switch {
   font-size: 17px;
@@ -41,7 +28,7 @@ const emit = defineEmits<{
 
 .slider:before {
   position: absolute;
-  content: '';
+  content: "";
   height: 1.4em;
   width: 0.1em;
   border-radius: 0px;
@@ -60,3 +47,16 @@ input:checked + .slider:before {
   transform: translateX(2.8em) rotate(360deg);
 }
 </style>
+
+<template>
+  <label class="switch" @change="emit('toggle-theme')">
+    <input type="checkbox" />
+    <span class="slider"></span>
+  </label>
+</template>
+
+<script setup lang="ts">
+const emit = defineEmits<{
+  (e: "toggle-theme"): void;
+}>();
+</script>

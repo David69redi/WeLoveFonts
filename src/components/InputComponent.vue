@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const inputUser = defineModel<string>('inputUser')
+const inputUser = defineModel<string>("inputUser");
 </script>
 
 <template>

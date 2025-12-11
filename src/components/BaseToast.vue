@@ -37,26 +37,13 @@
     border-radius: 5px;
     background-color: var(--toast-background);
     transition: all 0.3s ease;
-    opacity: 0;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-
-    backdrop-filter: blur(2px);
-    transform: translateY(100px);
+    transform: translateY(-100px);
   }
 }
 
-.toast-component.active .toast {
-  transition: all 0.3s ease-out;
-  transform: translateY(-20px);
-  opacity: 1;
-}
-
-@media screen and (width < 736px) {
-  .toast-component {
-    .toast {
-      max-width: 200px;
-      backdrop-filter: blur(2px);
-    }
-  }
+.active {
+  transition: all 0.1s ease-in;
+  transform: translateY(200px);
 }
 </style>
