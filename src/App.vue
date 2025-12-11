@@ -1,20 +1,25 @@
 <script setup lang="ts">
 // Componentes
-import BaseCard from '@/components/BaseCard.vue'
-import BaseToast from './components/BaseToast.vue'
-import InputComponent from '@/components/InputComponent.vue'
-import SwitchTheme from '@/components/SwitchTheme.vue'
-import FooterComponent from './components/FooterComponent.vue'
+import BaseCard from "@/components/BaseCard.vue";
+import BaseToast from "./components/BaseToast.vue";
+import InputComponent from "@/components/InputComponent.vue";
+import SwitchTheme from "@/components/SwitchTheme.vue";
+import FooterComponent from "@/components/FooterComponent.vue";
 // JSON
-import dataFonts from '@/assets/data/dataFonts.json'
+import dataFonts from "@/assets/data/dataFonts.json";
 
 // VUE
-import { ref } from 'vue'
+import { ref } from "vue";
 
 //Funciones y Variables
-import { switchTheme, toFont, handleCopyText, toastActive } from './assets/utils/fuctions'
+import {
+  switchTheme,
+  toFont,
+  handleCopyText,
+  toastActive,
+} from "./assets/utils/fuctions";
 
-const inputUser = ref<string>('')
+const inputUser = ref<string>("");
 </script>
 
 <template>
@@ -29,10 +34,18 @@ const inputUser = ref<string>('')
     <main>
       <InputComponent v-model:inputUser="inputUser" />
       <BaseCard
-        v-for="(fuente, i) in dataFonts.filter((f) => f.name.toLowerCase() !== 'normal')"
+        v-for="(fuente, i) in dataFonts.filter(
+          (f) => f.name.toLowerCase() !== 'normal'
+        )"
         :key="i"
         :name="fuente.name"
-        :default="toFont('Esto es un texto de ejemplo WeLoveFonts', fuente.name, dataFonts)"
+        :default="
+          toFont(
+            'Esto es un texto de ejemplo WeLoveFonts',
+            fuente.name,
+            dataFonts
+          )
+        "
         :input="toFont(inputUser, fuente.name, dataFonts)"
         @click="handleCopyText(toFont(inputUser, fuente.name, dataFonts))"
       />
@@ -54,7 +67,7 @@ const inputUser = ref<string>('')
 
   .header-app {
     h1 {
-      font-family: 'Korcy Oblique';
+      font-family: "Korcy Oblique";
       font-size: 4.2rem;
     }
   }
@@ -76,7 +89,7 @@ const inputUser = ref<string>('')
 
     .header-app {
       h1 {
-        font-family: 'Korcy Oblique';
+        font-family: "Korcy Oblique";
         font-size: 3.8rem;
       }
     }

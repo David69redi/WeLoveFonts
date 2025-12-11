@@ -1,18 +1,26 @@
+<script setup lang="ts"></script>
+
 <template>
   <footer class="flex justify-between w-full items-center">
     <div class="flex gap-2">
       <p>Made by</p>
-      <a class="border-b-2" href="https://github.com/David69redi" target="_blank">David Mejías</a>
+      <a
+        class="border-b-2"
+        href="https://github.com/David69redi"
+        target="_blank"
+        >David Mejías</a
+      >
     </div>
     <div class="ig">
-      <a target="_blank" href="https://www.instagram.com/itsdavidev?igsh=MXQ1eW9yMHUzeWFyMQ==">
+      <a
+        target="_blank"
+        href="https://www.instagram.com/itsdavidev?igsh=MXQ1eW9yMHUzeWFyMQ=="
+      >
         <font-awesome-icon :icon="['fab', 'instagram']" />
       </a>
     </div>
   </footer>
 </template>
-
-<script setup lang="ts"></script>
 
 <style scoped>
 footer {
