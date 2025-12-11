@@ -1,12 +1,12 @@
 <script setup lang="ts">
 // Componentes
 import BaseCard from '@/components/BaseCard.vue'
-import BaseToast from './components/BaseToast.vue'
+import BaseToast from '@/components/BaseToast.vue'
 import InputComponent from '@/components/InputComponent.vue'
 import SwitchTheme from '@/components/SwitchTheme.vue'
-import FooterComponent from './components/FooterComponent.vue'
+import FooterComponent from '@/components/FooterComponent.vue'
 // JSON
-import dataFonts from '@/assets/data/dataFonts.json'
+import dataFonts from './assets/data/dataFonts.json'
 
 // VUE
 import { ref } from 'vue'
