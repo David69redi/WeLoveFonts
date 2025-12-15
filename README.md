@@ -1,48 +1,45 @@
-# we-love-fonts
+# OLD-WeLoveFonts
 
-This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+![Logo](./src/assets/svg/LogoWLF.svg)
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-## Recommended Browser Setup
+**WeLoveFonts** is an interactive web app that allows users to transform text typed into an input field into various typographic styles (fonts) such as bold, italic, and more. Inspired by popular tools like CoolFonts, this site makes it easy to copy text with unique formats for use on social media, messaging apps, or any platform that supports styled Unicode characters.
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-## Type Support for `.vue` Imports in TS
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Features
 
-## Customize configuration
+- Real-time text input: type and see instant transformation.
+- Multiple styled fonts: Bold, Italic, Small Caps, and others.
+- Copy button for easy clipboard copying of styled text.
+- Clean and simple user interface.
+- Light and dark theme toggle.
+- Compatible with most modern browsers.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Demo
 
-## Project Setup
+Check out the site at: (https://we-love-fonts-js.vercel.app/)
 
-```sh
-npm install
-```
+## Technologies Used
 
-### Compile and Hot-Reload for Development
+- Vue 3 with `<script setup>`
+- TypeScript
+- TailWind and CSS for styling and dark mode
+- Clipboard API for copying text
+- Vercel for deployment and hosting
 
-```sh
-npm run dev
-```
+## Usage
 
-### Type-Check, Compile and Minify for Production
+1. Type the text you want to transform into the input field.
+2. See the text displayed in different styles below.
+3. Click the copy button next to the desired font to copy the styled text to your clipboard.
+4. Paste the copied text wherever you want.
 
-```sh
-npm run build
-```
+## Contributions
 
-### Lint with [ESLint](https://eslint.org/)
+Contributions are welcome! Feel free to open issues or pull requests to suggest improvements or report bugs.
 
-```sh
-npm run lint
-```
+## License
+
+MIT License © 2025 David Mejías
