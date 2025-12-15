@@ -19,7 +19,7 @@
 
 ## Demo
 
-Check out the site at: (https://we-love-fonts-js.vercel.app/)
+Check out the site at: (https://we-love-fonts.vercel.app/)
 
 ## Technologies Used
 
