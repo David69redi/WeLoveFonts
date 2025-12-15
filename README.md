@@ -1,4 +1,4 @@
-# OLD-WeLoveFonts
+# WeLoveFonts
 
 
 ![Logo](./src/assets/svg/LogoWLF.svg)
