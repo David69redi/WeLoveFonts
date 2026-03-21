@@ -1,7 +1,7 @@
 # WeLoveFonts
 
 
-![Logo](./src/assets/svg/LogoWLF.svg)
+![Logo](https://raw.githubusercontent.com/code-deivid/WeLoveFonts/refs/heads/main/src/assets/svg/LogoWLF.svg)
 
 
 **WeLoveFonts** is an interactive web app that allows users to transform text typed into an input field into various typographic styles (fonts) such as bold, italic, and more. Inspired by popular tools like CoolFonts, this site makes it easy to copy text with unique formats for use on social media, messaging apps, or any platform that supports styled Unicode characters.
